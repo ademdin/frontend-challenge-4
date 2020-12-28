@@ -1,0 +1,249 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  background-image: url(images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(235, 21%, 11%);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.light {
+  background-image: url(images/bg-desktop-light.jpg);
+  background-color: hsl(0, 0%, 98%);
+}
+
+
+
+.container {
+  width: 550px;
+  padding: 6% 0 0;
+}
+
+/* Heading */
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.moonDiv {
+  text-align: right;
+}
+
+.themeToggler {
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.moonHide {
+  display: none;
+}
+
+.sunHide {
+  display: none;
+}
+
+/* Input Part */
+
+.inputContainer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+
+.circleDiv {
+  display: inline-block;
+  width: 100%:
+  height: 70px;
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 6px 0 0 6px;
+}
+
+
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border: 2px solid hsl(234, 11%, 52%);
+  border-radius: 50%;
+  margin: 20px auto 0;
+}
+
+.addTodoDiv {
+  background-color: hsl(235, 24%, 19%);
+  height: 70px;
+  padding: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+
+.addTodo {
+  background-color: inherit;
+  border: 0;
+  height: 70px;
+  width: 100%;
+  color: hsl(234, 11%, 52%);
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 0 6px 6px 0;
+}
+
+.lightBackground {
+  background-color: hsl(236, 33%, 92%);
+}
+
+/* Todo List Creation */
+
+ul {
+  background-color: hsl(235, 24%, 19%);
+  width: 100%;
+  list-style-type: none;
+  border-radius: 6px;
+  padding: 0;
+}
+
+li {
+  color: hsl(236, 33%, 92%);
+  height: 70px;
+  padding: 24px 0 0 80px;
+  position: relative;
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+
+.blackText {
+  color: hsl(235, 19%, 35%);
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+p {
+  display: inline-block;
+  width: 90%;
+  height: 30px;
+  margin: 0;
+}
+
+.circleHidden {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid hsl(234, 11%, 52%);
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+
+.crossIconSpan {
+  display: inline-block;
+}
+
+/* Last List Item */
+
+.lastLi {
+  border-bottom: none;
+  height: 50px;
+  padding: 13px 0 0 30px;
+}
+
+.counter {
+  font-size: 1rem;
+  color: hsl(234, 11%, 52%);
+  margin-right: 50px;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  color: hsl(234, 11%, 52%);
+  outline: none !important;
+}
+
+button:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.ligthButton:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.clearCompleted {
+  margin-left: 50px;
+}
+
+.inUse {
+  color: hsl(220, 98%, 61%);
+}
+
+/* Hover state */
+
+.circleHidden:hover {
+  cursor: pointer;
+  border-color: hsl(192, 100%, 67%);
+}
+
+.crossIconSpan:hover {
+  cursor: pointer;
+}
+
+/* Cross Text */
+
+.crossText {
+  text-decoration: line-through;
+  color: hsl(234, 11%, 52%);
+}
+
+.circleColored {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border: none;
+}
+
+/* Check Icon */
+
+.checkIcon {
+  width: 50%;
+  margin-top: 3px;
+  margin-left: 7px;
+  display: inline-block;
+}
+
+.checkIconHide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url(images/bg-mobile-dark.jpg);
+  }
+
+  .light {
+    background-image: url(images/bg-mobile-light.jpg);
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  p {
+    width: 85%;
+  }
+
+  .lastLi {
+    font-size: 0.7rem;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .counter {
+    font-size: 0.7rem;
+    margin-right: 4px;
+  }
+
+  .clearCompleted {
+    margin-left: 2px;
+  }
+}
